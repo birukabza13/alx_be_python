@@ -6,7 +6,7 @@ class Book:
         self.author = author
         self._is_checked_out = False
     
-    def check_in(self):
+    def return_book(self):
         self._is_checked_out = False
     
     def check_out(self):
@@ -34,7 +34,7 @@ class Library():
     def return_book(self, title):
         for book in self._books:
             if book.title == title:
-                book.check_in()
+                book.return_book()
                 break
     
     def list_available_books(self):
