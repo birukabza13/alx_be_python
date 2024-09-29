@@ -5,7 +5,7 @@ class BankAccount:
         self.account_balance = account_balance
     
 
-    def depoist(self, amount):
+    def deposit(self, amount):
         self.account_balance+=amount
     
     def withdraw(self, amount):
